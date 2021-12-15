@@ -27,3 +27,12 @@ jobs:
 
       - name: Run a one-line script
         run: echo Hello from Octo Organization
+
+  build-prod:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Run a one-line script
+        run: echo Hello from Octo Organization
