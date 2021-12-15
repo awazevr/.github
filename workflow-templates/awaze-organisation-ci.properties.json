@@ -1,7 +1,6 @@
 {
-  "name": "Awaze Organizstion Workflow",
+  "name": "Awaze Organisation Workflow",
   "description": "Awaze CI workflow template.",
-  "iconName": "example-icon",
   "categories": [
       "Go"
   ],
