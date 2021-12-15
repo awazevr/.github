@@ -1,0 +1,12 @@
+{
+  "name": "Create Semantic Release Workflow",
+  "description": "Create Semantic-Release for Terraform Module.",
+  "categories": [
+      "Deployment"
+  ],
+  "filePatterns": [
+      "package.json$",
+      "^Dockerfile",
+      ".*\\.tf$"
+  ]
+}
