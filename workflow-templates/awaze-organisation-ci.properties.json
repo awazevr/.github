@@ -2,7 +2,7 @@
   "name": "Awaze Organisation Workflow",
   "description": "Awaze CI workflow template.",
   "categories": [
-      "Go"
+      "Deployment"
   ],
   "filePatterns": [
       "package.json$",
