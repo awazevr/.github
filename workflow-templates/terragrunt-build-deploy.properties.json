@@ -1,0 +1,12 @@
+{
+  "name": "Deploy Terraform Infrastructure Workflow",
+  "description": "Deploy Infrastructure",
+  "categories": [
+      "Deployment"
+  ],
+  "filePatterns": [
+      "package.json$",
+      "^Dockerfile",
+      ".*\\.tf$"
+  ]
+}
