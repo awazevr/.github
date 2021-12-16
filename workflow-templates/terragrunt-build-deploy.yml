@@ -1,4 +1,4 @@
-name: Awaze Organization CI
+name: Deploy Terraform Infrastucture CI
 
 on:
   push:
