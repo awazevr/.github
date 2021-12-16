@@ -93,9 +93,10 @@ jobs:
       #   run: terragrunt run-all destroy --terragrunt-non-interactive
       # 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
 
-  deploy-preprod:
+  deploy-pre-prod:
     name: 'Deploy PreProd'
     environment: pre-prod
+    needs: deploy-dev
     runs-on: ubuntu-latest
     env:
       AWS_DEFAULT_REGION: eu-west-2
@@ -179,6 +180,7 @@ jobs:
   deploy-prod:
     name: 'Deploy-Prod'
     environment: prod
+    needs: deploy-pre-prod
     runs-on: ubuntu-latest
     env:
       AWS_DEFAULT_REGION: eu-west-2
