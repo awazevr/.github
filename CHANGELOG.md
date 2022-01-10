@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/awazevr/.github/compare/v1.0.2...v1.0.3) (2022-01-10)
+
+
+### Bug Fixes
+
+* add composite action for zap scan, added actions folder to contain all actions ([2375214](https://github.com/awazevr/.github/commit/2375214c81adeff3956871e8b1a3078ca99d474f))
+
 ## [1.0.2](https://github.com/awazevr/.github/compare/v1.0.1...v1.0.2) (2022-01-10)
 
 
