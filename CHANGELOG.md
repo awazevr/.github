@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/awazevr/.github/compare/v1.0.0...v1.0.1) (2022-01-10)
+
+
+### Bug Fixes
+
+* added check-latest: true to always get the latest version of node ([6997a80](https://github.com/awazevr/.github/commit/6997a80ae918e5b355f6b3242b9deeb7092ac5cf))
+
 # 1.0.0 (2022-01-10)
 
 
