@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/awazevr/.github/compare/v1.0.3...v1.0.4) (2022-01-10)
+
+
+### Bug Fixes
+
+* added action at repo root ([6f53502](https://github.com/awazevr/.github/commit/6f5350285836a60bc688f147d1106728fae602c3))
+
 ## [1.0.3](https://github.com/awazevr/.github/compare/v1.0.2...v1.0.3) (2022-01-10)
 
 
