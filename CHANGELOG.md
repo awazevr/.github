@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/awazevr/.github/compare/v1.0.4...v1.0.5) (2022-01-10)
+
+
+### Bug Fixes
+
+* added actions folder ([8459cbd](https://github.com/awazevr/.github/commit/8459cbdea8f0d7b97d6a60f8384426afbdfeb318))
+
 ## [1.0.4](https://github.com/awazevr/.github/compare/v1.0.3...v1.0.4) (2022-01-10)
 
 
