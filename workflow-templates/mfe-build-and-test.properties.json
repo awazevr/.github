@@ -2,8 +2,7 @@
   "name": "MFE build and test workflow",
   "description": "Build and test MFE image",
   "categories": [
-      "Build",
-      "Deployment"
+      "Test"
   ],
   "filePatterns": [
       "package.json$",
