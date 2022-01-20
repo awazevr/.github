@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/awazevr/.github/compare/v1.0.6...v1.1.0) (2022-01-20)
+
+
+### Features
+
+* **MFE-8:** Add MFE workflow templates ([71d89fe](https://github.com/awazevr/.github/commit/71d89fed218be2fc59c214eec444431329951546))
+
 ## [1.0.6](https://github.com/awazevr/.github/compare/v1.0.5...v1.0.6) (2022-01-10)
 
 
