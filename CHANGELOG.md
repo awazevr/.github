@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/awazevr/.github/compare/v1.1.1...v1.1.2) (2022-01-20)
+
+
+### Bug Fixes
+
+* Add re-run guards ([a86dbc7](https://github.com/awazevr/.github/commit/a86dbc7b6d89003875c44d771db8e8d4c3f50d8a))
+
 ## [1.1.1](https://github.com/awazevr/.github/compare/v1.1.0...v1.1.1) (2022-01-20)
 
 
