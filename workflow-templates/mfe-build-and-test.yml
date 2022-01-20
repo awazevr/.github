@@ -1,0 +1,29 @@
+name: Build and test
+
+on:
+  pull_request:
+    branches: [$default-branch]
+
+  workflow_dispatch:
+
+jobs:
+  build_image:
+    runs-on: ubuntu-latest
+    concurrency: 
+      group: ${{ github.head_ref }}
+      cancel-in-progress: true
+    steps:
+      - uses: actions/checkout@v2
+      - uses: benjlevesque/short-sha@v1.2
+        id: short-sha
+        with:
+          length: 7
+      - name: Update .npmrc
+        run: |
+          echo -e "\n" >> .npmrc
+          echo -e "//node.bit.dev/:_authToken=${{ secrets.BIT_TOKEN }}" >> .npmrc
+          echo -e "//npm.pkg.github.com/:_authToken=${{ secrets.PAT_TOKEN}}" >> .npmrc
+      - name: Build the Docker image
+        env:
+          GIT_SHA: ${{ steps.short-sha.outputs.sha }}
+        run: docker build --target mfe_build . --build-arg GIT_HASH="${{ env.GIT_SHA }}"

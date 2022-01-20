@@ -1,0 +1,12 @@
+{
+  "name": "MFE build and deploy workflow",
+  "description": "Deploy Awaze MFEs",
+  "categories": [
+      "Build",
+      "Deployment"
+  ],
+  "filePatterns": [
+      "package.json$",
+      "^Dockerfile"
+  ]
+}
