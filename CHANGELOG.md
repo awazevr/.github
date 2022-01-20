@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/awazevr/.github/compare/v1.1.0...v1.1.1) (2022-01-20)
+
+
+### Bug Fixes
+
+* **MFE-6:** Update workflow categories ([c995385](https://github.com/awazevr/.github/commit/c9953858ecf704eab8f2adf656afe515f903e903))
+
 # [1.1.0](https://github.com/awazevr/.github/compare/v1.0.6...v1.1.0) (2022-01-20)
 
 
