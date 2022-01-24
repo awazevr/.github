@@ -1,0 +1,11 @@
+{
+  "name": "MFE rollback workflow",
+  "description": "Rollback to a specific revision on a particular environment",
+  "categories": [
+    "Deployment"
+],
+  "filePatterns": [
+      "package.json$",
+      "^Dockerfile"
+  ]
+}
