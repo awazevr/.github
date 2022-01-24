@@ -4,7 +4,7 @@ on:
     branches: [$default-branch]
 
 env:
-  APP_NAME: <REPLACE_ME> # e.g. search-mfe
+  APP_NAME: ${{ github.event.repository.name }} # if your repository name does not match your MFE name in infrastructure, you should replace this with a hardcoded value
   DEV_ECR: <REPLACE_ME> # e.g. <ACCOUNT_ID>.dkr.ecr.eu-west-2.amazonaws.com/<ECR_REPO>
   PPRD_ECR: <REPLACE_ME> # e.g. <ACCOUNT_ID>.dkr.ecr.eu-west-2.amazonaws.com/<ECR_REPO>
   PRD_ECR: <REPLACE_ME> # e.g. <ACCOUNT_ID>.dkr.ecr.eu-west-2.amazonaws.com/<ECR_REPO>
