@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/awazevr/.github/compare/v1.1.2...v1.1.3) (2022-01-25)
+
+
+### Bug Fixes
+
+* Remove restore run result from mfe workflow ([35c41cc](https://github.com/awazevr/.github/commit/35c41ccdefa5bc70f8b1e92672113d5cd7280d0e))
+
 ## [1.1.2](https://github.com/awazevr/.github/compare/v1.1.1...v1.1.2) (2022-01-20)
 
 
