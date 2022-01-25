@@ -15,12 +15,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Restore previous run result
-        id: run-result
-        uses: awazevr/restore-previous-run-result-action@v1.0.8
-        with:
-          action: 'restore_result'
-      
       - name: Checkout, Build and Push Docker Image
         if: steps.run-result.outputs.run-result != 'success'
         uses: awazevr/mfe-docker-build-push-action@v1.0.33
@@ -32,23 +26,12 @@ jobs:
           pat-token: ${{ secrets.PAT_TOKEN }}
           ecr-repository: 'dev-age-${{ env.APP_NAME }}'
           build-only: false
-        
-      - name: Record run result
-        uses: awazevr/restore-previous-run-result-action@v1.0.8
-        with:
-          action: 'record_result'
 
   publish_static_assets:
     environment: static assets
     runs-on: ubuntu-latest
     needs: [build_and_push_image]
     steps:
-      - name: Restore previous run result
-        id: run-result
-        uses: awazevr/restore-previous-run-result-action@v1.0.8
-        with:
-          action: 'restore_result'
-        
       - name: Publish static assets
         if: steps.run-result.outputs.run-result != 'success'
         uses: awazevr/mfe-publish-static-assets-action@v1.0.6
@@ -58,11 +41,6 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: eu-west-2
           app-name: ${{ env.APP_NAME }}
-          
-      - name: Record run result
-        uses: awazevr/restore-previous-run-result-action@v1.0.8
-        with:
-          action: 'record_result'
 
   deploy_dev:
     environment: dev
