@@ -1,0 +1,11 @@
+{
+  "name": "MFE newrelic deployment workflow",
+  "description": "Deploy the associated MFE newrelic terraform stack",
+  "categories": [
+    "Deployment"
+],
+  "filePatterns": [
+      "package.json$",
+      "^Dockerfile"
+  ]
+}
