@@ -17,7 +17,7 @@ jobs:
     steps:
       - name: Checkout, Build and Push Docker Image
         if: steps.run-result.outputs.run-result != 'success'
-        uses: awazevr/mfe-docker-build-push-action@v1.0.33
+        uses: awazevr/mfe-docker-build-push-action@v1.0.36
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
