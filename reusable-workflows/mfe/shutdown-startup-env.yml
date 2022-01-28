@@ -1,0 +1,57 @@
+name: MFE - Startup / Shutdown env
+
+on:
+  workflow_call:
+    inputs:
+      app-name:
+        description: 'Your MFE name'
+        required: true
+        type: string
+      action:
+        description: 'startup || shutdown'
+        required: true
+        type: string
+      desired-count:
+        description: 'The number of instances you wish to start on startup'
+        required: true
+        type: string
+      environment:
+        required: true
+        type: string
+      aws-region:
+        required: true
+        type: string
+    secrets:
+      aws-access-key-id:
+        required: true
+        type: string
+      aws-secret-access-key:
+        required: true
+        type: string
+      submodules-pat:
+        required: true
+        type: string
+
+jobs:
+  startup_shutdown_env:
+    name: Startup/shutdown environment
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.submodules-pat }}
+          submodules: 'true'
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.aws-access-key-id }}
+          aws-secret-access-key: ${{ secrets.aws-secret-access-key }}
+          aws-region: ${{ inputs.aws-region }}
+
+      - name: Startup environment
+        working-directory: ./mfe-infrastructure/ci
+        shell: bash
+        run: ./shutdown_startup_envs.sh ${{ inputs.app-name }} ${{inputs.environment) ${{ inputs.action }}
+
+
