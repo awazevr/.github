@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/awazevr/.github/compare/v1.2.0...v1.2.1) (2022-01-28)
+
+
+### Bug Fixes
+
+* **MFE-15:** Move workflow ([b7d20d6](https://github.com/awazevr/.github/commit/b7d20d60447bb9818cf527366357c5a3a514e3fa))
+
 # [1.2.0](https://github.com/awazevr/.github/compare/v1.1.3...v1.2.0) (2022-01-28)
 
 
