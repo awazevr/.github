@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/awazevr/.github/compare/v1.1.3...v1.2.0) (2022-01-28)
+
+
+### Features
+
+* **MFE-15:** Add startup/shutdown reusable workflow env ([27eb7e6](https://github.com/awazevr/.github/commit/27eb7e635750e55c27190db38eb8aa82b46d3d96))
+
 ## [1.1.3](https://github.com/awazevr/.github/compare/v1.1.2...v1.1.3) (2022-01-25)
 
 
